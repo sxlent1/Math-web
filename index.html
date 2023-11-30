@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <script>
+      let name2 = "Player1";
+      let Tomi = "Tomi";
+      let name = Tomi;
+      let C;
+
+      document.write("Hello" + " " + name2);
+      document.write('<br>');
+
+      document.write('Jelenleg Python-t tanulok!');
+      delay(1000).then(() => {
+        document.write(`<style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+    </style><br>${name} vagyok és írtam egy programot, ami készít neked egy Matematika feladat sort.`);
+        return delay(6000);
+      }).then(() => {
+
+
+        let A = "-8+";
+        let B = "(+5)=";
+        C = -3;
+        let E = "-10+(-6)";
+        let D = "-2-(-6)";
+        let F = "-7+(+7)";
+        let G = "2+(-3)";
+        let H = "-6+(-2)";
+        let I = "-2+(-8)";
+        let J = "-5+(2)";
+        let K = "-1-(-1)";
+
+        document.write('<br>');
+        return iterate(10, i => {
+          document.write(`<br> ${A}${B}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          return delay(1000);
+        });
+      }).then(() => {
+        document.write(`<br>A válasz ${C}`);
+        document.write(`<br>Na ${name2} jó lett? 01/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let D = "-2-(-6)";
+        return iterate(10, i => {
+          document.write(`<br> ${D}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny1 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: 4 02/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let E = "-10+(-6)";
+        return iterate(10, i => {
+          document.write(`<br> ${E}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny2 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: -16 03/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let F = "-7+(+7)";
+        return iterate(10, i => {
+          document.write(`<br> ${F}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny3 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: 0 04/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let G = "2+(-3)";
+        return iterate(10, i => {
+          document.write(`<br> ${G}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny4 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: -1 05/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let H = "-6+(-2)";
+        return iterate(10, i => {
+          document.write(`<br> ${H}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny4 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: -8 06/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let I = "-2+(-8)";
+        return iterate(10, i => {
+          document.write(`<br> ${I}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny4 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: -10 07/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let J = "-5+(2)";
+        return iterate(10, i => {
+          document.write(`<br> ${J}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny4 = parseInt(prompt("Add meg a válaszodat: "));
+        document.write(`<br>A helyes válasz: -3 08/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      }).then(() => {
+        let K = "-1-(-1)";
+        return iterate(10, i => {
+          document.write(`<br> ${K}`);
+          document.write(`<br>${i}`);
+          document.write('<br>');
+          scrollToBottom();
+          return delay(1000);
+        });
+      }).then(() => {
+        let eredmeny4 = parseInt(prompt("Add meg a értékodat: "));
+        document.write(`<br>A helyes érték: 0 09/09`);
+        document.write('<br>Várj!');
+        scrollToBottom();
+        return delay(3000);
+      });
+
+      function delay(milliseconds) {
+        return new Promise(resolve => setTimeout(resolve, milliseconds));
+      }
+
+      function iterate(count, callback) {
+        let promise = Promise.resolve();
+        for (let i = count; i > 0; i--) {
+          promise = promise.then(() => callback(i));
+        }
+        return promise;
+      }
+
+      function scrollToBottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+      }
+    </script>
+
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
